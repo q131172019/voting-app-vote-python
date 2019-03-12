@@ -44,5 +44,5 @@ canary:
     - name: istio_request_duration_seconds_bucket
       # maximum req duration P99
       # milliseconds
-      threshold: 500
+      threshold: 1000
       interval: 60s

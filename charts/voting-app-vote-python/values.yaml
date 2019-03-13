@@ -1,7 +1,7 @@
 # Default values for python.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-replicaCount: 3
+replicaCount: 1
 image:
   repository: draft
   tag: dev
@@ -31,7 +31,7 @@ canary:
     gateways:
     - voting-app.istio-system.svc.cluster.local
   canaryAnalysis:
-    interval: 120s
+    interval: 60s
     threshold: 5
     maxWeight: 50
     stepWeight: 10
